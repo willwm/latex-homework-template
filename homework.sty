@@ -50,8 +50,8 @@
     
     \newcommand{\deltaxi}{\Delta x_{i}}
     \newcommand{\deltaxk}{\Delta x_{k}}
-    \newcommand{\lowersum}[1][f]{L(#1,P) &= \sum^n_{i=1} m_i\deltaxi}
-    \newcommand{\uppersum}[1][f]{U(#1,P) &= \sum^n_{i=1} M_i\deltaxi}
+    \newcommand{\lowersum}[1][f]{L(#1,P) = \sum^n_{i=1} m_i\deltaxi}
+    \newcommand{\uppersum}[1][f]{U(#1,P) = \sum^n_{i=1} M_i\deltaxi}
 
 %% Convenience Wrappers %%
 
@@ -106,6 +106,7 @@
     }
 
 %% tcolorbox Environments %%
+
     \renewenvironment{proof}
         {{\sffamily\bfseries Proof. }\resetpar}
         {\qed}
@@ -129,3 +130,15 @@
         colback={White!90!CornflowerBlue},
         borderline west={3pt}{0pt}{NavyBlue!80!white}
     }
+    
+%% Show code and output %%
+%% (From: https://tex.stackexchange.com/questions/194854/how-to-show-latex-commands-in-text-mode/392818) %%
+
+    \newcommand{\gfcb}[1]{%
+        \fcolorbox{white}{gray!10!}{\quad\strut #1\quad}
+        } % gfcb := gray fcolorbox
+        
+    \newcommand{\cop}[1]{%
+        \gfcb{\texttt{\detokenize{#1}}} 
+        \ensuremath{\quad \longrightarrow \quad & #1}
+        } % cop := code output
