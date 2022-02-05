@@ -1,4 +1,4 @@
 # latex-homework-template
 LaTeX Homework Template
 
-<img width="612" alt="main pdf" src="https://user-images.githubusercontent.com/303042/152626435-ea717984-7b6b-437c-8615-582c29053f05.png">
+<img width="740" alt="main pdf" src="https://user-images.githubusercontent.com/303042/152626622-c06be41e-979b-425b-810c-86b578c179bb.png">
